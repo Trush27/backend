@@ -1,0 +1,282 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.icon-email{
+  padding-right: 30px;
+  background: url(../images/icons/customer.svg) no-repeat right;
+  background-size: auto;
+  color: black;
+  background-color: white;
+  border: none;
+  height: 40px;
+}
+.icon-password{
+
+  background-color: white;
+  border: none;
+  height: 40px;
+}
+#togglePassword{
+  float: right;
+  z-index: 2;
+  cursor: pointer; 
+  position: absolute;
+  top: 30%; 
+  right: 10px; 
+  transform: translateY(-50%);
+}
+.mx-8{
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+.pizza-shop-header{
+  color:rgba(66,119,153,255);
+}
+.login-button{
+  background-color:rgba(5,101,158,255);
+  border: none;
+  height: 34px;
+  color: white;
+  border-radius: 2px;
+}
+.forgot-password-div{
+  text-align: right;
+}
+.forgot-password-link{
+  text-decoration: none;
+  color: (170,202,240,255);
+  margin-right: -10px;
+  margin-top: -20px;
+}
+.back-ground{
+  background-color:rgba(216,239,247,255);
+}
+.send-button{
+  border: none;
+  height: 34px;
+  color: white;
+  border-radius: 2px;
+  background-color: rgba(5,101,158,255);
+}
+.submit-button{
+  border: none;
+  height: 34px;
+  color: white;
+  border-radius: 2px;
+  background-color: rgba(5,101,158,255);
+}
+.pizza-background{
+  width: 100%;
+}
+.brand-name-dashboard{
+  color: blue;
+  font-weight: 500;
+}
+ul {
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.navbar-profile{
+  text-align: right;
+  background-color:rgba(66,119,153,255);
+}
+.text-Users-title{
+  color:rgba(66,119,153,255);
+}
+.search-textbox{
+  width: auto;
+  height: 100%;
+  margin-right: 20px;
+  padding-right: 25px;
+  background: url(../images/icons/customer.svg) no-repeat right;
+  background-size: auto;
+  background-color: white;
+  border: 1px solid;
+}
+.status-active{
+  color: white;
+  background-color: rgb(83, 196, 83);
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+}
+.status-inactive{
+  color: white;
+  background-color: rgb(128, 0, 0);
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+}
+.users-table{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+th{
+  color: gray;
+}
+.pagination-container {
+  padding: 15px 0;
+  border-top: 1px solid #dee2e6;
+}
+
+.page-link {
+  color: #6c757d;
+  border: 1px solid #dee2e6;
+  margin: 0 4px;
+  border-radius: 4px !important;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.page-link:hover {
+  color: #0056b3;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+.back-button{
+  color: rgba(66,119,153,255);
+  border: rgba(66,119,153,255) 1px solid;
+  background-color: white;
+}
+.add-user-frame{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+.select-profile-picture{
+  border: 1px solid gray;
+}
+.add-user-button{
+  background-color: rgba(66,119,153,255);
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+.create-user-button{
+  background-color: rgba(66,119,153,255);
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+.cancel-user-button{
+  color:rgba(66,119,153,255);
+  border: rgba(66,119,153,255)1px solid;
+  border-radius: 3px;
+}
+.confirmmodal{
+  display: none;
+}
+.no-button{
+  color: rgba(66,119,153,255);
+  border: 1px solid rgba(66,119,153,255);
+  background-color: white;
+  height: 40px;
+  border-radius: 5px;
+}
+.cancel-permissions{
+  background-color: rgba(66,119,153,255);
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+.save-users-button{
+  color: rgba(66,119,153,255);
+  border: rgba(66,119,153,255) 1px solid;
+  background-color: white;
+}
+.save-cancel-div{
+  text-align: right;
+}
+.menu-frame{
+  border: 1px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+.items-icon{
+  width: 20px;
+  height: 20px;
+}
+.plus-button-icon{
+  width: 20px;
+  height: 20px;
+}
+.plus-button{
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.menu-item-icon{
+  width: auto;
+  height: auto;
+}
+.search-row-menu{
+  text-align: right;
+}
+.search-textbox{
+  width: 100px;
+  height: 30px;
+  margin-right: 20px;
+  padding-right: 25px;
+  background: url(../images/icons/customer.svg) no-repeat right;
+  background-size: auto;
+  background-color: white;
+  border: 1px solid;
+}
+.delete-item{
+  width: 28px;
+  height: 25px;
+}
+.add-new-item{
+  background-color: rgba(66,119,153,255);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+}
+.text-align-right{
+  text-align: right;
+}
+@media screen and (max-width:576px) {
+  .mx-8{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .pizza-background{
+      display: none;
+  }
+}
+@media screen and (max-width:1200px) {
+  .mx-8{
+      margin-left: 4rem;
+      margin-right: 4rem;
+  }
+}

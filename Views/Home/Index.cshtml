@@ -1,0 +1,62 @@
+﻿@model UserDemo
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row d-flex justify-content-center align-items-center">
+    <img class="col" src="images/logos/pizzashop_logo.png" height="70px" width="70px">
+    <div class="col fs-2 pizza-shop-header">
+        PIZZASHOP
+    </div>
+</div>
+<div class="row w-100">
+    <p class="col fs-3 welcome-text mx-8 my-1">Welcome,</p>
+</div>
+<form asp-controller="Home" asp-action="login" method="post" class="row" id=loginform>
+    <div class="row w-100">
+        <input type="email" asp-for="Email" id="Email" name="Email" placeholder="E-mail" class="icon-email form col mx-8 my-2">
+    </div>
+    
+    <div class="row w-100">
+        <div class="col mx-8 my-2 position-relative w-100 p-0">
+            <input type="password" asp-for="Password" placeholder="Password" name="Password" class="icon-password col w-100 align-items-center" id="password">
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
+        </div>
+    </div>
+    <div class="row w-100 d-flex align-items-center justify-content-center my-3">
+        <div class="form-check col mx-8 d-flex">
+            <input type="checkbox" asp-for="IsRemember" class="form-check-input row" id="exampleCheck1">
+            <label class="form-check-label row mx-3 " for="exampleCheck1" asp-for="IsRemember">Remember Me</label>
+            <div class="col forgot-password-div">
+                <a class="forgot-password-link" href="javascript:void(0);" onclick="navigateToForgotPassword()">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+    <div class="row w-100">
+        <button type="submit" class="login-button col mx-8 my-2">Login</button>
+    </div>
+</form>
+<script>
+    function navigateToForgotPassword() {
+        var email = document.getElementById('Email').value;
+        window.location.href = '@Url.Action("ForgotPassword", "Home")' + '?email=' + encodeURIComponent(email);
+    }
+
+            $('#loginform').validate( {
+                rules:{
+                    Email:{
+                        required:true
+                    },
+                    Password:{
+                        required:true
+                    }
+                },
+                messages:{
+                    Email:{
+                        required:"email is required"
+                    },
+                    Password:{
+                        required:"password is required"
+                    }
+                }
+            });
+</script>
